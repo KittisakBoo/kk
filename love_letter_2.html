@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Letter for Crush</title>
+    <link rel="stylesheet" href="love_letter_2.css">
+    </head>
+<body>
+    <div class="envelope-wrapper">
+        <div id="envelope" class="close">
+            <div class="front flap"></div>
+            <div class="front box"></div>
+            <div class="letter">
+                <p class="words line1">FOR YOU MY LOVE <span class="heart-icon">❤️</span></p>
+                <p class="words line2">ขอโทษนะครับตัวเล็กถ้าเราทำให้แพนน้อยใจหรือไม่ชอบ เรามาขอโทษนะแพนเป็นตัวเล็กของฮองนะครับเรารักแพนมากนะคิดถึงแพนมากนะครับ</p>
+                <p class="words line3">Ed Sheeran - Photograph (Official Lyric Video)</p>
+                <p class="words line4">my world stops.</p>
+            </div>
+            <div class="back flap"></div>
+            <div class="hearts">
+                <div class="heart"></div>
+                <div class="heart"></div>
+                <div class="heart"></div>
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="open-button">OPEN</button>
+            <button id="close-button">CLOSE</button>
+        </div>
+    </div>
+
+    <script>
+        const envelope = document.getElementById('envelope');
+        const openButton = document.getElementById('open-button');
+        const closeButton = document.getElementById('close-button');
+
+        openButton.addEventListener('click', () => {
+            envelope.classList.remove('close');
+        });
+
+        closeButton.addEventListener('click', () => {
+            envelope.classList.add('close');
+        });
+    </script>
+</body>
+</html>
